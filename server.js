@@ -18,8 +18,11 @@ app.get('/', (req, res) => {
   // Note: __dirname is the current directory you're in. Try logging it and see what you get!
 })
 
+// The urlencoded method within body-parser tells body-parser 
+// to extract data from the <form> element and add them to the body property in the request object.
 app.post('/quotes', (req, res) => {
   console.log('Heavenooooooooooooooooo!')
+  console.log(req.body)
 })
 
 // Great, we know that Express is handling the form for us right now. 
